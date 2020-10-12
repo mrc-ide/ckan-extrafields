@@ -1,0 +1,22 @@
+{% ckan_extends %}
+
+{% block package_basic_fields_custom %}
+  {{ form.input('data_type', label=_('Data Type'), id='field-data_type', placeholder=_('Data Type'), value=data.data_type, error=errors.data_type, classes=['control-medium']) }}
+  {{ form.input('disease_pathogen', label=_('Disease / Pathogen'), id='field-disease_pathogen', placeholder=_('Disease / Pathogen'), value=data.disease_pathogen, error=errors.disease_pathogen, classes=['control-medium']) }}
+  {{ form.input('age_range', label=_('Age Range'), id='field-age_range', placeholder=_('Age Range'), value=data.age_range, error=errors.age_range, classes=['control-medium']) }}
+  {{ form.input('geography', label=_('Geography'), id='field-geography', placeholder=_('Geography'), value=data.geography, error=errors.geography, classes=['control-medium']) }}
+  {{ form.input('data_start_date', label=_('Data Start Date'), id='field-data_start_date', placeholder=_('Data Start Date'), value=data.data_start_date, error=errors.data_start_date, classes=['control-medium']) }}
+  {{ form.input('data_end_date', label=_('Data End Date'), id='field-data_end_date', placeholder=_('Data End Date'), value=data.data_end_date, error=errors.data_end_date, classes=['control-medium']) }}
+  {{ form.input('date_data_received', label=_('Date Data Received'), id='field-date_data_received', placeholder=_('Date Data Received'), value=data.date_data_received, error=errors.date_data_received, classes=['control-medium']) }}
+  {{ form.input('public_url_id', label=_('Public data URL / DOI / PubMed ID'), id='field-public_url_id', placeholder=_('Public data URL / DOI / PubMed ID'), value=data.public_url_id, error=errors.public_url_id, classes=['control-medium']) }}
+  {{ form.input('original_owner', label=_('Original owner / creator'), id='field-original_owner', placeholder=_('Original owner / creator'), value=data.original_owner, error=errors.original_owner, classes=['control-medium']) }}
+  {{ form.input('custodian', label=_('Centre Custodian'), id='field-custodian', placeholder=_('Centre Custodian'), value=data.custodian, error=errors.custodian, classes=['control-medium']) }}
+  {{ form.input('custodian_email', label=_('Centre Custodian (email)'), id='field-custodian_email', placeholder=_('Centre Custodian (email)'), value=data.custodian_email, error=errors.custodian_email, classes=['control-medium']) }}
+  {{ form.input('changes_made', label=_('Changes Made to Data'), id='field-changes_made', placeholder=_('Changes Made to Data'), value=data.changes_made, error=errors.changes_made, classes=['control-medium']) }}
+  {{ form.input('sharable_int', label=_('Sharable internally?'), id='field-sharable_int', placeholder=_('Sharable internally?'), value=data.sharable_int, error=errors.sharable_int, classes=['control-medium']) }}
+  {{ form.input('sharable_pub', label=_('Sharable publicly?'), id='field-sharable_pub', placeholder=_('Sharable publicly?'), value=data.sharable_pub, error=errors.sharable_pub, classes=['control-medium']) }}
+  {{ form.input('data_size', label=_('Data Size'), id='field-data_size', placeholder=_('Data Size'), value=data.data_size, error=errors.data_size, classes=['control-medium']) }}
+  {{ form.input('extra_lic_info', label=_('Extra License Info'), id='field-extra_lic_info', placeholder=_('Extra License Info'), value=data.extra_lic_info, error=errors.extra_lic_info, classes=['control-medium']) }}
+  {{ form.input('other_notes', label=_('Other Notes'), id='field-other_notes', placeholder=_('Other Notes'), value=data.other_notes, error=errors.other_notes, classes=['control-medium']) }}
+{% endblock %}
+

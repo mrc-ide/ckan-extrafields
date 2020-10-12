@@ -1,0 +1,106 @@
+{% ckan_extends %}
+
+{% block extras %}
+  {% if pkg_dict.data_type %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Data Type") }}</th>
+      <td class="dataset-details">{{ pkg_dict.data_type }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.disease_pathogen %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Disease / Pathogen") }}</th>
+      <td class="dataset-details">{{ pkg_dict.disease_pathogen }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.age_range %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Age Range") }}</th>
+      <td class="dataset-details">{{ pkg_dict.age_range }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.geography %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Geography") }}</th>
+      <td class="dataset-details">{{ pkg_dict.geography }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.data_start_date %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Data Start Date") }}</th>
+      <td class="dataset-details">{{ pkg_dict.data_start_date }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.data_end_date %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Data End Date") }}</th>
+      <td class="dataset-details">{{ pkg_dict.data_end_date }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.date_data_received %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Date Data Received") }}</th>
+      <td class="dataset-details">{{ pkg_dict.date_data_received }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.public_url_id %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Public data URL / DOI / PubMed ID") }}</th>
+      <td class="dataset-details">{{ pkg_dict.public_url_id }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.original_owner %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Original owner / creator") }}</th>
+      <td class="dataset-details">{{ pkg_dict.original_owner }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.custodian %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Centre Custodian") }}</th>
+      <td class="dataset-details">{{ pkg_dict.custodian }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.custodian_email %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Centre Custodian (email)") }}</th>
+      <td class="dataset-details">{{ pkg_dict.custodian_email }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.changes_made %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Changes Made to Data") }}</th>
+      <td class="dataset-details">{{ pkg_dict.changes_made }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.sharable_int %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Sharable internally?") }}</th>
+      <td class="dataset-details">{{ pkg_dict.sharable_int }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.sharable_pub %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Sharable publicly?") }}</th>
+      <td class="dataset-details">{{ pkg_dict.sharable_pub }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.data_size %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Data Size") }}</th>
+      <td class="dataset-details">{{ pkg_dict.data_size }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.extra_lic_info %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Extra License Info") }}</th>
+      <td class="dataset-details">{{ pkg_dict.extra_lic_info }}</td>
+    </tr>
+  {% endif %}
+  {% if pkg_dict.other_notes %}
+    <tr>
+      <th scope="row" class="dataset-label">{{ _("Other Notes") }}</th>
+      <td class="dataset-details">{{ pkg_dict.other_notes }}</td>
+    </tr>
+  {% endif %}
+{% endblock %}

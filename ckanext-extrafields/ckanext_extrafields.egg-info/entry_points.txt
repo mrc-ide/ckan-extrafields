@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        extrafields=ckanext.extrafields.plugin:MRC_IDatasetFormPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
